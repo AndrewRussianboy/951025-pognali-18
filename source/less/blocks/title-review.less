@@ -1,0 +1,81 @@
+.title-review {
+  position: relative;
+  background-image: url(../img/globe-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position-y: -50px;
+  background-position-x: center;
+  background-size: 320px auto;
+
+  background-color: #161c36;
+
+  padding-top: 46px;
+  margin-top: 50px;
+
+  @media (min-resolution: @retina-dpi) and (min-resolution: @retina-dppx) {
+    background-image: url(../img/globe-back-mobile@2x.jpg);
+    background-size: 640px auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .title-review {
+    background-image: url(../img/globe-back-tablet@1x.jpg);
+    background-position: right -360px top 0;
+    background-position-y: 330px;
+    background-size: 1479px auto;
+
+    background-color: #182044;
+
+    position: relative;
+    z-index: 1;
+    margin-bottom: -231px;
+
+    padding-top: 112px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url(../img/globe-back-tablet@2x.jpg);
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .title-review {
+    background-image: url(../img/globe-back-desktop@1x.jpg);
+    background-size: 1800px auto;
+    background-position: center;
+    background-position-y: -44px;
+
+    background-color: #161c36;
+
+    padding-bottom: 330px;
+    padding-top: 160px;
+
+    position: relative;
+    z-index: 10;
+
+    margin-bottom: 0;
+
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+
+    &::after {
+      top: 23px;
+      left: 40%;
+      width: 431px;
+      height: 640px;
+      background-image: url(../img/traveller-illustration-desktop@1x.png);
+    }
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url(../img/globe-back-desktop@2x.jpg);
+      background-size: 3600px auto;
+    }
+  }
+
+  .title-review__container {
+    display: flex;
+    width: 1230px;
+    margin: 0 auto;
+  }
+}
+

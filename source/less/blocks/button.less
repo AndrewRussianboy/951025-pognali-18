@@ -1,0 +1,45 @@
+.button {
+  display: block;
+  color: #1d2e5b;
+  background-color: #ffd74b;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+
+  text-align: left;
+
+  border-radius: 10px;
+
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 24px;
+
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: #ffbd30;
+  }
+
+  &:focus {
+    color: rgba(29, 46, 91, 0.3);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .button {
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 20px;
+
+    padding-top: 31px;
+    padding-bottom: 26px;
+    padding-left: 34px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button {
+    order: 3;
+  }
+}

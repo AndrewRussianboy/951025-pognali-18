@@ -1,0 +1,135 @@
+.plans-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.plans-list__item {
+  margin-bottom: 10px;
+  padding-left: 25px;
+  padding-top: 24px;
+  padding-bottom: 22px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #1d2e5b;
+}
+
+.plans-list__country {
+  margin-bottom: 17px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.plans-list__info {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+.plans-list__companion {
+  padding-bottom: 4px;
+}
+
+.plans-list__dates {
+  margin-bottom: 21px;
+}
+
+.plans-list__button {
+  color: rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:focus {
+    color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .plans-list__item {
+    position: relative;
+    padding-left: 37px;
+    padding-top: 28px;
+    padding-bottom: 10px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 97px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #eff0f4;
+    }
+  }
+
+  .plans-list__country {
+    display: flex;
+    justify-content: space-between;
+    width: 546px;
+    margin-bottom: 38px;
+  }
+
+  .plans-list__number {
+    order: 2;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .plans-list__country {
+    font-size: 24px;
+    line-height: 50px;
+  }
+
+  .plans-list__info {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 546px;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  .plans-list__dates {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .plans-list__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 42px 23px 44px;
+    margin-bottom: 14px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .plans-list__country {
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+
+  .plans-list__number {
+    order: 1;
+    margin-right: 38px;
+  }
+
+  .plans-list__country-name {
+    order: 2;
+  }
+
+  .plans-list__info {
+    align-items: center;
+    width: 590px;
+  }
+
+  .plans-list__dates {
+    margin-right: 85px;
+  }
+}

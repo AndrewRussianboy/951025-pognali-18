@@ -1,0 +1,86 @@
+.hobby-list {
+  .list-common-drop;
+  padding-left: 27px;
+  margin-bottom: 20px;
+}
+
+.hobby-list--closed {
+  display: none;
+}
+
+.hobby-list__item {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.hobby-list-show {
+  display: block;
+}
+
+.hobby-list__label {
+  position: relative;
+  display: block;
+  font-size: 15px;
+  line-height: 15px;
+  color: #444444;
+  cursor: pointer;
+}
+
+.hobby-list__checkbox + .hobby-list__label::before {
+  .catalog-checkbox-off;
+}
+
+.hobby-list__checkbox:checked + .hobby-list__label::after {
+  .catalog-checkbox-on;
+}
+
+@media (min-width: @tablet-width) {
+
+  .hobby-list {
+    display: flex;
+    width: 460px;
+    margin-left: auto;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  .hobby-list__item {
+    margin: 0;
+    min-width: 140px;
+  }
+
+  .hobby-list__checkbox + .hobby-list__label::before {
+    .catalog-checkbox-off-tablet;
+  }
+
+  .hobby-list__checkbox:checked + .hobby-list__label::after {
+    .catalog-checkbox-on-tablet;
+  }
+
+  .hobby-list__label {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .hobby-list {
+    width: 160px;
+
+    margin: 0;
+    padding-left: 36px;
+  }
+
+  .hobby-list__item {
+    margin-bottom: 18px;
+  }
+
+  .hobby-list__label {
+    margin: 0;
+  }
+}

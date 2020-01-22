@@ -1,0 +1,122 @@
+.profile-details {
+  padding-top: 165px;
+  padding-bottom: 21px;
+  background-color: #edeff6;
+}
+
+.profile-details__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 270px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.profile-details__avatar {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.profile-details__avatar-image {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.profile-details__change-photo {
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #161c35;
+  text-transform: uppercase;
+  padding-top: 7px;
+  padding-bottom: 3px;
+  background-color: #dfe3f0;
+  border-radius: 30px;
+
+  &:hover {
+    background-color: #d1d7e9;
+  }
+  &:focus {
+    color: rgba(29, 46, 91, 0.3);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .profile-details {
+    padding-top: 414px;
+  }
+
+  .profile-details__container {
+    justify-content: space-between;
+    width: 618px;
+    margin-bottom: 63px;
+  }
+
+  .profile-details__avatar-image {
+    width: 94px;
+    height: 94px;
+    border-radius: 10px;
+  }
+
+  .profile-details__change-photo {
+    .form-font-style-tablet;
+
+    padding-top: 22px;
+    padding-bottom: 20px;
+
+    margin-top: 31px;
+
+    border-radius: 10px;
+    letter-spacing: 2px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .profile-details {
+    position: inherit;
+    z-index: 2;
+  }
+
+  .profile-details__container {
+    position: relative;
+    z-index: 100;
+    justify-content: space-between;
+    align-items: center;
+    width: 330px;
+    margin-right: 155px;
+    margin-top: -254px;
+    margin-bottom: 26px;
+  }
+
+  .profile-details__avatar {
+    z-index: 100;
+    margin: 0;
+  }
+
+  .profile-details__avatar-image {
+    width: 190px;
+    height: 190px;
+
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .profile-details__change-photo {
+    width: 190px;
+    margin-left: 140px;
+    margin-top: -5px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    padding-top: 18px;
+    padding-bottom: 12px;
+  }
+
+  .profile-details__change-photo-word {
+    display: none;
+  }
+}

@@ -1,0 +1,133 @@
+.person-level__wrap {
+  position: relative;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.person-level__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  width: 60px;
+  height: 60px;
+
+  border-radius: 50%;
+}
+
+.person-level__progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.person-level__half {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.person-level {
+  &--99 {
+    .round-progress-bar(99, 54px, 3px, orange, rgba(0, 0, 0, 0.5));
+  }
+
+  &--80 {
+    .round-progress-bar(80, 54px, 3px, orange, rgba(0, 0, 0, 0.5));
+  }
+}
+
+.round-progress-bar (@level: 50, @size: 65px, @border-width: 5px, @border-color: orange, @bg-color: transparent) when (@level > 50) {
+
+  @full-size: @size + @border-width * 2;
+
+  .person-level__wrap {
+    width: @full-size;
+    height: @full-size;
+  }
+
+  .person-level__info {
+    width: @full-size;
+    height: @full-size;
+    background-color: @bg-color;
+  }
+
+  .person-level__half {
+    width: @size;
+    height: @size;
+    border: @border-width solid @border-color;
+    clip: rect(auto, (@full-size), (@full-size), (@full-size/2));
+  }
+
+  .person-level__half--left {
+    transform: rotate(180 + @level * 3.6deg);
+  }
+}
+
+.round-progress-bar (@level: 50, @size: 65px, @border-width: 5px, @border-color: orange, @bg-color: transparent) when (@level <= 50) {
+
+  @full-size: @size + @border-width * 2;
+
+  .level__wrap {
+    width: @full-size;
+    height: @full-size;
+  }
+
+  .level__info {
+    width: @full-size;
+    height: @full-size;
+    background-color: @bg-color;
+  }
+
+  .level__progress {
+      clip: rect(auto, (@full-size), (@full-size), (@full-size/2));
+   }
+
+  .level__half {
+    width: @size;
+    height: @size;
+    border: @border-width solid @border-color;
+    clip: rect(auto, (@full-size), (@full-size), (@full-size/2));
+  }
+
+  .level__half--right {
+    display: none;
+  }
+
+  .level__half--left {
+    transform: rotate(180 + @level * 3.6deg);
+  }
+}
+
+.person-level__number {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+
+  position: relative;
+
+  &::after {
+    position: absolute;
+
+    content: "";
+
+    width: 31px;
+    height: 1px;
+
+    background-color: rgba(255, 255, 255, 0.3);
+    right: -3px;
+    top: 21px;
+  }
+}
+
+.person-level__level {
+  font-size: 14px;
+  line-height: 14px;
+}
+

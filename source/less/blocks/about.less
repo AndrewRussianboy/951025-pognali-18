@@ -1,0 +1,256 @@
+.about {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  z-index: 7;
+  background-color: #192144;
+
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  color: #ffffff;
+}
+
+.about__container {
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-left: 50px;
+}
+
+.about__title {
+  position: relative;
+  color: #ff8d30;
+
+  margin: 0;
+  margin-bottom: 18px;
+
+  &::after {
+    position: absolute;
+
+    content: "";
+    top: -33px;
+    left: -60px;
+
+    width: 132px;
+    height: 132px;
+    border-radius: 20px;
+    background-color: #141b3b;
+
+    background-repeat: no-repeat;
+    background-position: center 0;
+
+    z-index: -2;
+  }
+
+  &::before {
+    position: absolute;
+
+    content: "";
+
+    top: -33px;
+    right: 8px;
+
+    width: 292px;
+    height: 352px;
+
+    background-image: url(../img/about-mobile@1x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 292px auto;
+    z-index: -1;
+  }
+}
+
+@media (min-resolution: @retina-dppx) {
+  .about__title::before {
+    background-image: url(../img/about-mobile@2x.png);
+  }
+}
+
+.about__text {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+  margin: 0;
+
+  width: 225px;
+
+  &--bold {
+    display: inline-block;
+    padding-top: 18px;
+    font-weight: bold;
+  }
+}
+
+.about__button {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+
+  .about {
+    padding-top: 140px;
+    padding-bottom: 90px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+
+    z-index: 20;
+  }
+
+  .about__container {
+    width: 768px;
+    padding-left: 75px;
+  }
+
+  .about__title {
+    font-size: 45px;
+    line-height: 45px;
+
+    margin-bottom: 44px;
+
+    &::after {
+      position: absolute;
+
+      content: "";
+      top: -44px;
+      left: -36px;
+
+      width: 688px;
+      height: 213px;
+      border-radius: 20px;
+      background-color: #141b3b;
+
+      background-repeat: no-repeat;
+      background-position: center 0;
+
+      z-index: -2;
+    }
+
+    &::before {
+      width: 376px;
+      height: 1278px;
+      background-image: url(../img/about-tablet@2x.png);
+      background-position: right top 40px;
+      background-size: 376px auto;
+      z-index: -1;
+    }
+  }
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .about__title::before {
+      background-image: url(../img/about-tablet@2x.png);
+    }
+  }
+
+  .about__text {
+    font-size: 28px;
+    line-height: 33px;
+
+    width: 300px;
+    margin-bottom: 25px;
+
+    &--bold {
+      font-size: 21px;
+      line-height: 25px;
+      padding-top: 28px;
+    }
+  }
+
+  .about__button {
+    display: inline-block;
+
+    color: #1d2e5b;
+    background-color: #ffd74b;
+    border-radius: 15px;
+
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+
+    box-sizing: border-box;
+    padding: 29px 125px 26px 33px;
+    position: relative;
+
+    &:hover {
+      background-color: #ffbd30;
+    }
+
+    &:focus {
+      color: rgba(29, 46, 91, 0.3);
+    }
+  }
+
+  .about__button:focus svg {
+    fill:rgba(29, 46, 91, 0.3);
+  }
+
+  .about__button svg {
+    position: absolute;
+    right: 36px;
+    top: 30px;
+    fill: #1d2e5b;
+  }
+}
+
+
+
+@media (min-width: @desktop-width) {
+  .about {
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+
+    padding-top: 114px;
+    padding-bottom: 167px;
+  }
+
+  .about__container {
+    width: 1440px;
+    padding-left: 130px;
+  }
+
+  .about__title {
+    margin-bottom: 62px;
+
+    &::after {
+      top: -60px;
+      left: -68px;
+
+      width: 213px;
+      height: 213px;
+
+      border-radius: 20px;
+    }
+
+    &::before {
+      top: -45px;
+      right: 60px;
+      background-image: url(../img/about-desktop@1x.png);
+      background-size: 630px auto;
+      background-position: 0 0;
+      width: 630px;
+      height: 665px;
+    }
+  }
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .about__title::before {
+      background-image: url(../img/about-tablet@2x.png);
+      background-size: 1260px auto;
+    }
+  }
+
+  .about__text {
+    width: 612px;
+    margin-bottom: 42px;
+
+    &--bold {
+      padding-top: 34px;
+      width: 410px;
+    }
+  }
+
+  .about__button {
+    border-radius: 20px;
+  }
+}

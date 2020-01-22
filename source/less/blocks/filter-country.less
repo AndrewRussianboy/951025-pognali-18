@@ -1,0 +1,242 @@
+.filter-country {
+  position: relative;
+  background-color: #e2e5f2;
+  padding-bottom: 2px;
+  padding-top: 160px;
+  z-index: 1;
+}
+
+.filter-country__container {
+  width: 270px;
+  margin: 0 auto;
+}
+
+.filter-country__choose-country {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.filter-country__svg {
+  width: 15px;
+  height: 10px;
+
+  margin-right: 8px;
+}
+
+.filter-country__title {
+  display: inline-block;
+  padding-right: 27px;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #192144;
+}
+
+.filter-country__block {
+  position: absolute;
+  background-color: #e2e5f2;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.filter-country__list {
+  order: 4;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 12px;
+  padding: 0;
+  padding-left: 25px;
+  list-style: none;
+}
+
+.filter-country__list--hidden {
+  display: none;
+}
+
+.filter-country__item {
+  padding-bottom: 5px;
+}
+
+.filter-country__link {
+  font-size: 16px;
+  line-height: 22px;
+  line-height: 1.38;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgba(25, 33, 68, 0.3);
+
+  &--active {
+    color: #192144;
+  }
+
+  &:hover {
+    color: rgba(25, 33, 68, 0.6);
+  }
+
+  &:active {
+    color: #192144;
+  }
+}
+
+.filter-country__show-country-link {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  width: 17px;
+}
+
+.filter-country__show-country-text {
+  display: none;
+}
+
+.filter-country__show-country {
+  display: none;
+  width: 17px;
+  height: 3px;
+
+  fill: #192144;
+}
+
+.filter-country__close-country {
+  display: block;
+  width: 12px;
+  height: 12px;
+
+  fill: #192144;
+}
+
+.filter-country__show-country-link:hover .filter-country__show-country,
+.filter-country__show-country-link:hover .filter-country__close-country {
+  fill: rgba(25, 33, 68, 0.6);
+}
+
+.filter-country__show-country-link:focus .filter-country__show-country,
+.filter-country__show-country-link:focus .filter-country__close-country {
+  fill: rgba(25, 33, 68, 0.3);
+}
+
+@media (min-width: @tablet-width) {
+  .filter-country {
+    padding-top: 410px;
+    padding-bottom: 48px;
+  }
+
+  .filter-country__container {
+    width: 620px;
+  }
+
+  .filter-country__svg-title {
+    display: none;
+  }
+
+  .filter-country__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    order: 1;
+    width: 365px;
+    margin: 0;
+    margin-right: 77px;
+    padding-left: 0;
+  }
+
+  .filter-country__link {
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    color: rgba(25, 33, 68, 0.3);
+
+    &--active {
+      color: #192144;
+    }
+  }
+
+  .filter-country__show-country-link {
+    display: flex;
+    width: 175px;
+    font-size: 20px;
+    order: 2;
+  }
+
+  .filter-country__show-country-text {
+    display: inline-block;
+    margin-right: auto;
+
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    color: #192144;
+
+    &:hover {
+      color: rgba(25, 33, 68, 0.6);
+    }
+
+    &:active {
+      color: rgba(25, 33, 68, 0.3);
+    }
+  }
+
+  .filter-country__show-country-text--show {
+    display: none;
+  }
+
+  .filter-country__show-country {
+    vertical-align: middle;
+    width: 27px;
+    height: 5px;
+  }
+
+  .filter-country__close-country {
+    vertical-align: middle;
+    width: 19px;
+    height: 19px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .filter-country {
+    padding-bottom: 63px;
+  }
+
+  .filter-country__container {
+    width: 1240px;
+  }
+
+  .filter-country__svg-title {
+    display: inline-block;
+  }
+
+  .filter-country__title {
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    color: #192144;
+  }
+
+  .filter-country__svg {
+    width: 23px;
+    height: 15px;
+  }
+
+  .filter-country__list {
+    display: inline-flex;
+    margin-right: 370px;
+  }
+
+  .filter-country__item {
+    font-size: 20px;
+  }
+}
+
+

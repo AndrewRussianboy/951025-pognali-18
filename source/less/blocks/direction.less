@@ -1,0 +1,121 @@
+.direction {
+  position: relative;
+  z-index: 6;
+  margin-top: -30px;
+  padding: 100px 0 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: #edeff6;
+}
+
+.direction__container {
+  width: 270px;
+  margin: 0 auto;
+}
+
+.direction__header {
+  margin-bottom: 62px;
+  padding: 0 25px;
+
+  box-sizing: border-box;
+}
+
+.direction__title {
+  color: #ff8d30;
+
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.direction__description {
+  width: 195px;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+}
+
+.direction__button {
+  position: relative;
+}
+
+.direction__button svg {
+  position: absolute;
+  right: 22px;
+  top: 22px;
+  fill: #1d2e5b;
+}
+
+.direction__button:focus svg {
+  fill: rgba(29, 46, 91, 0.3);
+}
+
+@media (min-width: @tablet-width) {
+  .direction {
+    background-image: url(../img/flags-back@1x.png);
+    background-repeat: no-repeat;
+    background-position: top 160px right 40px;
+
+    padding: 155px 0;
+    padding-bottom: 80px;
+    margin-top: -80px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  .direction__container {
+    width: 620px;
+  }
+
+  .direction__header {
+    padding: 0;
+    width: 340px;
+
+    margin-bottom: 105px;
+  }
+
+  .direction__title {
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 58px;
+  }
+
+  .direction__description {
+    width: 340px;
+    font-size: 28px;
+    line-height: 33px;
+    font-weight: 300;
+  }
+
+  .direction__button svg {
+    right: 35px;
+    top: 32px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .direction {
+    padding-top: 241px;
+    background-position: top 168px right 60px;
+  }
+
+  .direction__container {
+    width: 1440px;
+  }
+
+  .direction__container--flex {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding-left: 130px;
+  }
+
+  .direction__button {
+    width: 274px;
+
+    margin-top: -132px;
+    margin-left: 861px;
+    margin-bottom: 50px;
+    position: relative;
+  }
+}
+

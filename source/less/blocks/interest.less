@@ -1,0 +1,404 @@
+.interest {
+  position: relative;
+  z-index: 3;
+  padding-top: 145px;
+  padding-bottom: 40px;
+  margin-top: -70px;
+  background-color: #192144;
+  color: #ffffff;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.interest__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 270px;
+  margin: 0 auto;
+}
+
+.interest__title {
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 20px;
+  color: #ff8d30;
+}
+
+.interest__text {
+  width: 212px;
+  margin: 0;
+  margin-bottom: 28px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+  text-align: center;
+
+  &--register {
+    width: 154px;
+    margin-bottom: 0px;
+  }
+}
+
+.interest__text--down {
+  margin-bottom: 33px;
+}
+
+.interest__login {
+  text-decoration: underline;
+  color: #ffd74b;
+
+  &:hover {
+    color: #ff8d30
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
+.interest__mail-form {
+  position: relative;
+
+  &:hover .interest__your-mail::-webkit-input-placeholder {
+    color: rgba(68, 68, 68, 0.5);
+  }
+}
+
+.interest__mail-form:hover .interest__your-mail::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.interest__your-mail {
+  width: 270px;
+  padding-top: 22px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  margin-bottom: 26px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: none;
+
+  font-size: 18px;
+
+  &:hover {
+    background-color: #edeff6;
+  }
+
+  &:focus {
+    background-color: #192144;
+    color: #ffffff;
+    border: 4px solid #ffffff;
+    padding-top: 19px;
+    padding-bottom: 16px;
+  }
+}
+
+.interest__mail-form svg {
+  width: 10px;
+  height: 14px;
+  fill: #192144;
+}
+
+.interest__your-mail::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+  font-weight: 700;
+}
+
+.interest__your-mail::-moz-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+  font-weight: 700;
+}
+
+.interest__mail-deliver {
+  position: absolute;
+  top: 0;
+  left: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffd74b;
+  width: 60px;
+  height: 62px;
+  border-radius: 10px;
+  border: none;
+}
+
+.interest__mail-register {
+  display: none;
+}
+
+.interest__text-question {
+  display: block;
+}
+
+.interest__text-desktop {
+  display: none;
+}
+
+.interest__phone {
+  margin-bottom: 18px;
+  margin-left: 10px;
+  position: relative;
+}
+
+.interest__phone-icon {
+  fill: #ffd74b;
+  width: 18px;
+  height: 18px;
+}
+
+.interest__phone-svg,
+.interest__mail-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #121936;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+
+  position: absolute;
+  left: -60px;
+  top: -10px;
+}
+
+.interest__phone-svg {
+  top: -12px;
+}
+
+.interest__mail-svg {
+  top: -8px;
+}
+
+.interest__mail {
+  position: relative;
+  margin-left: 10px;
+}
+
+.interest__mail-icon {
+  fill: #ffd74b;
+  width: 18px;
+  height: 13px;
+}
+
+.interest__phone:hover svg,
+.interest__mail:hover svg {
+  fill: #ffbd30;
+}
+
+.interest__phone:focus svg,
+.interest__mail:focus svg {
+  fill: rgba(255, 189, 48, 0.3);
+}
+
+.interest__phone,
+.interest__mail {
+  display: block;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffd74b;
+  text-transform: uppercase;
+
+  &:hover {
+    color: #ffbd30;
+  }
+
+  &:focus {
+    color: rgba(255, 189, 48, 0.3);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .interest {
+    padding-bottom: 80px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  .interest__container {
+    width: 618px;
+    margin: 0 auto;
+  }
+
+  .interest__title {
+    margin-bottom: 60px;
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .interest__text {
+    width: 618px;
+    margin-bottom: 62px;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+
+    &--register {
+      margin-bottom: 0px;
+    }
+  }
+
+  .interest__text br {
+    display: none;
+  }
+
+  .interest__text-question {
+    display: inline;
+  }
+
+  .interest__mail-form input {
+    width: 620px;
+    padding-top: 28px;
+    padding-bottom: 26px;
+    padding-left: 35px;
+    margin-bottom: 59px;
+    border-radius: 20px;
+    font-size: 24px;
+
+    &:focus {
+      padding-top: 22px;
+      padding-bottom: 21px;
+    }
+  }
+
+  .interest__mail-deliver {
+    width: 82px;
+    height: 81px;
+
+    left: 538px;
+
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  .interest__mail {
+    left: -75px;
+    letter-spacing: normal;
+    font-stretch: normal;
+  }
+
+  .interest__mail-icon {
+    width: 27px;
+    height: 19px;
+  }
+
+  .interest__phone {
+    margin-bottom: 38px;
+    left: -75px;
+  }
+
+  .interest__phone-icon {
+    width: 27px;
+    height: 27px;
+  }
+
+  .interest__mail-svg,
+  .interest__phone-svg {
+    width: 67px;
+    height: 67px;
+
+    left: -91px;
+    top: -24px;
+  }
+
+  .interest__phone,
+  .interest__mail {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .interest {
+    padding-top: 178px;
+    padding-bottom: 95px;
+  }
+
+  .interest__container {
+    width: 1175px;
+  }
+
+  .interest__contacts {
+    display: flex;
+    justify-content: space-around;
+
+    width: 900px;
+    margin-left: 106px;
+  }
+
+  .interest__mail-form input {
+    margin-bottom: 68px;
+    width: 1175px;
+  }
+
+  .interest__mail-deliver {
+    width: 324px;
+    left: 851px;
+
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  .interest__mail-register {
+    display: inline-block;
+
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+
+    color: #1d2e5b;
+  }
+
+  .interest__text {
+    margin-bottom: 52px;
+    width: 775px;
+
+    &--down {
+      margin-bottom: 75px;
+    }
+
+    &--register {
+      margin-bottom: 0px;
+    }
+  }
+
+  .interest__text-question {
+    font-size: 29px;
+  }
+
+  .interest__mail,
+  .interest__phone {
+    left: 0;
+    font-weight: bold;
+  }
+
+  .interest__phone {
+    margin-right: 82px;
+  }
+
+  .interest__mail-svg,
+  .interest__phone-svg {
+    width: 90px;
+    height: 90px;
+    left: -121px;
+    top: -34px;
+  }
+
+  .interest__phone-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .interest__mail-icon {
+    width: 36px;
+    height: 26px;
+  }
+}
+

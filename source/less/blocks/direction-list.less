@@ -1,0 +1,297 @@
+.direction-list {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+.direction-list__item {
+  width: 270px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 29px;
+  }
+}
+
+.direction-list__image {
+  margin: 0;
+  z-index: 1;
+}
+
+.direction-list__image img {
+  border-radius: 10px;
+}
+
+.direction-list__country-wrapper {
+  background-color: #ffffff;
+
+  border-radius: 10px;
+  margin-top: -18px;
+  z-index: 2;
+  position: relative;
+
+  padding-left: 24px;
+  padding-top: 30px;
+  padding-bottom: 22px;
+
+  &--thailand::after {
+    position: absolute;
+
+    content: "";
+    top: -12px;
+    left: 25px;
+
+    width: 35px;
+    height: 24px;
+
+    background-image: url(../img/flag-thailand.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100%;
+
+    border-radius: 4px;
+  }
+
+  &--france::after {
+    position: absolute;
+
+    content: "";
+    top: -12px;
+    left: 25px;
+
+    width: 35px;
+    height: 24px;
+
+    background-image: url(../img/flag-france.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100%;
+
+    border-radius: 4px;
+  }
+
+  &--czech::after {
+    position: absolute;
+
+    content: "";
+    top: -12px;
+    left: 25px;
+
+    width: 35px;
+    height: 24px;
+
+    background-image: url(../img/flag-czech.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100%;
+
+    border-radius: 4px;
+  }
+}
+
+.direction-list__country {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+
+  color: #161c35;
+  display: block;
+
+  position: relative;
+}
+
+.direction-list__short-description {
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(68,68,68,0.3);
+}
+
+.direction-list__people {
+  font-size: 16px;
+  line-height: 30px;
+  color: rgba(68,68,68,0.3);
+
+  position: absolute;
+
+  top: 24px;
+  right: 26px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: -18px;
+    top: 8px;
+
+    width: 11px;
+    height: 11px;
+
+    background-image: url("../img/user.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    opacity: 0.1;
+  }
+
+  .direction-list__people svg {
+    width: 35px;
+    height: 24px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+
+  .direction-list {
+
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+
+      left: -36px;
+      top: -40px;
+
+      width: 141px;
+      height: 141px;
+
+      border-radius: 20px;
+      background-color: #e2e5f2;
+    }
+  }
+
+  .direction-list__item {
+    box-sizing: border-box;
+    width: 100%;
+
+    display: flex;
+
+    &:last-child {
+      margin-bottom: 47px;
+    }
+  }
+
+  .direction-list__image {
+    order: 2;
+    width: 186px;
+  }
+
+  .direction-list__image img {
+    height: 100%;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  .direction-list__country-wrapper {
+    margin: 0;
+    width: 430px;
+    padding-left: 30px;
+    padding-top: 32px;
+
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+
+    &--thailand::after {
+      width: 70px;
+      height: 47px;
+
+      top: 16px;
+      left: 404px;
+    }
+
+    &--france::after {
+      width: 70px;
+      height: 47px;
+
+      top: 16px;
+      left: 404px;
+    }
+
+    &--czech::after {
+      width: 70px;
+      height: 47px;
+
+      top: 16px;
+      left: 404px;
+    }
+  }
+
+  .direction-list__country {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .direction-list__short-description {
+    display: block;
+    margin-bottom: 10px;
+
+    font-size: 20px;
+  }
+
+  .direction-list__people {
+    position: relative;
+    top: 0;
+    right: 0;
+
+    font-size: 20px;
+
+    padding-left: 30px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      left: 0;
+      top: -2px;
+
+      width: 21px;
+      height: 21px;
+
+      background-image: url("../img/user.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+
+      opacity: 0.1;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .direction-list::before {
+    left: -68px;
+    top: -72px;
+  }
+
+  .direction-list__item {
+    margin-right: 170px;
+  }
+
+  .direction-list__country-wrapper {
+    width: 343px;
+    padding-top: 25px;
+
+    &--thailand::after {
+      left: 338px;
+      top: 23px;
+    }
+
+    &--france::after {
+      top: 23px;
+      left: 338px;
+    }
+
+    &--czech::after {
+      top: 23px;
+      left: 338px;
+    }
+  }
+
+  .direction-list__short-description {
+    margin-bottom: 24px;
+  }
+}

@@ -1,0 +1,146 @@
+.show-companions {
+  width: 270px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.show-companions__more {
+  display: inline-block;
+  font-size: 17px;
+  line-height: 30px;
+  color: #1d2e5b;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  text-align: center;
+  margin-bottom: 15px;
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+
+    width: 18px;
+    height: 18px;
+
+    left: -33px;
+    top: 2px;
+
+    background-image: url(../img/show-more-plus.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
+.show-companions__container {
+  padding-bottom: 46px;
+}
+
+.show-companions__list {
+  margin-bottom: 20px;
+}
+
+.show-companions__slider {
+  margin: 0;
+
+  display: flex;
+  border-radius: 20px;
+}
+
+.show-companions__button {
+  border: none;
+  padding: 0;
+
+  width: 135px;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  &--previous {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    border-right: 1px solid #edeff6;
+  }
+
+  &--next {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
+
+.show-companions__button:hover .show-companions__button-arrow{
+  opacity: 0.6;
+}
+
+.show-companions__button:focus .show-companions__button-arrow{
+  opacity: 0.3;
+}
+
+.show-companions__button-arrow {
+  fill: #192144;
+
+  width: 10px;
+  height: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .show-companions {
+    width: 688px;
+  }
+
+  .show-companions__more {
+    margin-bottom: 46px;
+  }
+
+  .show-companions__container {
+    background-color: #ffffff;
+
+    padding-top: 25px;
+    padding-bottom: 20px;
+
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .show-companions__more {
+    font-size: 20px;
+
+    &::before {
+      width: 27px;
+      height: 27px;
+      left: -52px;
+      top: 0;
+    }
+  }
+
+  .show-companions__slider {
+    padding-right: 26px;
+    padding-left: 30px;
+  }
+
+  .show-companions__button {
+    width: 30px;
+
+    &--previous {
+      border-right: none;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .show-companions {
+    width: 950px;
+  }
+}

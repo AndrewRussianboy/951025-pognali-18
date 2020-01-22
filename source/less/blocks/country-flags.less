@@ -1,0 +1,75 @@
+.country-flags__list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.country-flags__item {
+  position: relative;
+  margin-right: 19px;
+  width: 35px;
+  height: 24px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.country-flags__svg {
+  width: 35px;
+  height: 24px;
+}
+
+.country-flags__tooltip {
+  visibility: hidden;
+
+  position: absolute;
+  z-index: 1;
+
+  top: 35px;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+
+  background-color: #101d41;
+  color: #ffffff;
+  border-radius: 5px;
+
+  padding: 19px 28px 18px 24px;
+
+  &--srilanka {
+    left: -58px;
+  }
+
+  &--thailand {
+    left: -48px;
+  }
+
+  &--seychelles {
+    left: -52px;
+  }
+
+  &--belgium {
+    left: -47px;
+  }
+
+  &--czech {
+    left: -35px;
+  }
+}
+
+.country-flags__tooltip:after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: -16px;
+  right: 39%;
+  border: 8px solid transparent;
+  border-bottom: 8px solid #101d41;
+}
+
+.country-flags__item:hover .country-flags__tooltip {
+  visibility: visible;
+}

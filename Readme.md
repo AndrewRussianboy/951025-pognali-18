@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Андрей](https://up.htmlacademy.ru/adaptive/18/user/951025).
-* Наставник: `Неизвестно`.
+* Студент: [Андрей](https://up.htmlacademy.ru/adaptive/17/user/951025).
+* Наставник: `Анастасия Шевченко`.
 
 ---
 
@@ -24,7 +24,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 
 #### 2. Создайте форк
 
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/951025-pognali-18) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
+[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/951025-pognali-17) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
 
 <img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808227-6eee8a00-a190-11e9-9b7e-06ce2b06ba16.jpg">
 
@@ -54,7 +54,7 @@ git clone SSH-адрес_вашего_форка
 
 Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS, уровень 2](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
 
-[travis-image]: https://travis-ci.com/htmlacademy-adaptive/951025-pognali-18.svg?branch=master
-[travis-url]: https://travis-ci.com/htmlacademy-adaptive/951025-pognali-18
-[dependency-image]: https://david-dm.org/htmlacademy-adaptive/951025-pognali-18/dev-status.svg?style=flat-square
-[dependency-url]: https://david-dm.org/htmlacademy-adaptive/951025-pognali-18?type=dev
+[travis-image]: https://travis-ci.com/htmlacademy-adaptive/951025-pognali-17.svg?branch=master
+[travis-url]: https://travis-ci.com/htmlacademy-adaptive/951025-pognali-17
+[dependency-image]: https://david-dm.org/htmlacademy-adaptive/951025-pognali-17/dev-status.svg?style=flat-square
+[dependency-url]: https://david-dm.org/htmlacademy-adaptive/951025-pognali-17?type=dev

@@ -1,0 +1,43 @@
+.indicator {
+  width: 6px;
+  height: 6px;
+
+  margin-top: 23px;
+  margin-right: 22px;
+  margin-left: auto;
+
+  border-radius: 3px;
+
+  &--online {
+    background-color: #81e31e;
+  }
+
+  &--offline {
+    background-color: #f97676;
+  }
+
+  &--index {
+    margin: 0;
+    margin-top: 5px;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .indicator--catalog {
+    margin: 0;
+    margin-top: 12px;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .indicator--catalog {
+    position: absolute;
+
+    margin: 0;
+    margin-top: 9px;
+    margin-left: -20px;
+  }
+}
+

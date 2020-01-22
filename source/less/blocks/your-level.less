@@ -1,0 +1,130 @@
+.your-level__wrap {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.your-level__info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.your-level__number {
+  font-size: 38px;
+  line-height: 38px;
+  font-weight: 700;
+
+  color: #161c35;
+
+  position: relative;
+
+  &::after {
+    position: absolute;
+
+    content: "";
+
+    top: 34px;
+    left: 25px;
+
+    width: 49px;
+    height: 2px;
+    background-color: #cbced9;
+  }
+}
+
+.your-level__level {
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #444444;
+}
+
+.your-level__progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.your-level__half {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.your-level {
+  &--80 {
+    .round-progress-bar(80, 94px, 3px, orange);
+  }
+}
+
+.round-progress-bar (@level: 80, @size: 65px, @border-width: 5px, @border-color: orange, @bg-color: transparent) when (@level > 50) {
+
+  @full-size: @size + @border-width * 2;
+
+  .your-level__wrap {
+    width: @full-size;
+    height: @full-size;
+  }
+
+  .your-level__info {
+    width: @full-size;
+    height: @full-size;
+    background-color: @bg-color;
+  }
+
+  .your-level__half {
+    width: @size;
+    height: @size;
+    border: @border-width solid @border-color;
+    clip: rect(auto, (@full-size), (@full-size), (@full-size/2));
+  }
+
+  .your-level__half--left {
+    transform: rotate(180 + @level * 3.6deg);
+  }
+}
+
+.round-progress-bar (@level: 50, @size: 65px, @border-width: 5px, @border-color: orange, @bg-color: transparent) when (@level <= 50) {
+
+  @full-size: @size + @border-width * 2;
+
+  .your-level__wrap {
+    width: @full-size;
+    height: @full-size;
+  }
+
+  .your-level__info {
+    width: @full-size;
+    height: @full-size;
+    background-color: @bg-color;
+  }
+
+  .your-level__progress {
+      clip: rect(auto, (@full-size), (@full-size), (@full-size/2));
+   }
+
+  .your-level__half {
+    width: @size;
+    height: @size;
+    border: @border-width solid @border-color;
+    clip: rect(auto, (@full-size), (@full-size), (@full-size/2));
+  }
+
+  .your-level__half--right {
+    display: none;
+  }
+
+  .your-level__half--left {
+    transform: rotate(180 + @level * 3.6deg);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .your-level__number,
+  .your-level__level {
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,174 @@
+.profile-transport {
+  padding-bottom: 12px;
+  text-align: center;
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+}
+
+.profile-transport__wrapper {
+  margin-top: -8px;
+}
+
+.profile-transport__title {
+  display: inline-block;
+  margin-bottom: 6px;
+  padding-left: 17px;
+  padding-right: 17px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #1d2e5b;
+  background-color: #edeff6;
+}
+
+.profile-transport__container {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-transport__label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+}
+
+.profile-transport__label:hover .profile-transport__svg--on {
+  opacity: 0.7;
+}
+
+.profile-transport__label:hover .profile-transport__svg--off {
+  opacity: 0.3;
+}
+
+.profile-transport__checkbox:checked + .profile-transport__label {
+  background-color: #e2e5f1;
+}
+
+.profile-transport__checkbox:checked + .profile-transport__label .profile-transport__svg--on {
+  opacity: 0.3;
+}
+
+.profile-transport__checkbox:checked + .profile-transport__label .profile-transport__svg--off {
+  opacity: 0.1;
+}
+
+.profile-transport__svg {
+
+  &--plane {
+    width: 14px;
+    height: 16px;
+  }
+
+  &--bus {
+    width: 13px;
+    height: 16px;
+  }
+
+  &--bike {
+    width: 19px;
+    height: 17px;
+  }
+
+  &--run {
+    width: 15px;
+    height: 17px;
+  }
+
+  &--on {
+    fill: #1d2e5b;
+  }
+
+  &--off {
+    fill: #b2b2b2;
+    opacity: 0.15;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .profile-transport {
+    position: absolute;
+    bottom: 268px;
+    left: 154px;
+    width: 308px;
+    padding-bottom: 32px;
+  }
+
+  .profile-transport__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: -45px;
+  }
+
+  .profile-transport__title {
+    .form-font-style-tablet;
+    order: 2;
+    margin: 0 auto;
+    padding-top: 17px;
+    box-sizing: border-box;
+  }
+
+  .profile-transport__label {
+    width: 43px;
+    height: 43px;
+    margin-right: 6px;
+  }
+
+  .profile-transport__svg {
+
+    &--plane {
+      width: 19px;
+      height: 21px;
+    }
+
+    &--bus {
+      width: 17px;
+      height: 21px;
+    }
+
+    &--bike {
+      width: 24px;
+      height: 21px;
+    }
+
+    &--run {
+      width: 20px;
+      height: 21px;
+    }
+  }
+
+  .profile-transport__container {
+    margin-top: 35px;
+  }
+
+  .profile-transport__container-svg {
+    width: 43px;
+    height: 43px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .profile-transport {
+    position: relative;
+    bottom: 0;
+    left: 32px;
+    margin-bottom: 32px;
+    width: 384px;
+  }
+
+  .profile-transport__label {
+    margin-right: 0;
+  }
+}

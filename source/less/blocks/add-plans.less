@@ -1,0 +1,149 @@
+.add-plans {
+  padding-top: 30px;
+}
+
+.add-plans__container {
+  width: 270px;
+  margin: 0 auto;
+}
+
+.add-plans__title-container {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 30px;
+}
+
+.add-plans__title {
+  .form-plan-title;
+  margin: 0;
+}
+
+.add-plans__link-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 48px;
+  margin-right: 18px;
+}
+
+.add-plans__link-container--desktop {
+  display: none;
+}
+
+.add-plans__link-slider {
+  width: 6px;
+  height: 6px;
+
+  background-color: #bbbfcc;
+  border-radius: 50%;
+
+  &--current {
+    background-color: #1d2e5b;
+  }
+}
+
+.add-plans__step-one,
+.add-plans__step-two {
+  margin-bottom: 10px;
+}
+
+@media (min-width: @tablet-width) {
+  .add-plans {
+    padding-top: 48px;
+  }
+
+  .add-plans__title-container {
+    margin-bottom: 49px;
+  }
+
+  .add-plans__container {
+    width: 618px;
+  }
+
+  .add-plans__title {
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  .add-plans__link-container {
+    width: 74px;
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+
+  .add-plans__step-one,
+  .add-plans__step-two {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .add-plans__container {
+    width: 1320px;
+  }
+
+  .add-plans__step-one,
+  .add-plans__step-two {
+    margin-bottom: 44px;
+  }
+
+  .add-plans__title-container {
+    margin-left: 70px;
+  }
+
+  .add-plans__link-container {
+    display: none;
+  }
+
+  .add-plans__link-slider {
+    display: inline-block;
+    margin-right: 20px;
+    color: rgba(0, 0, 0, 0.6);
+
+    &--current {
+      color: #000000;
+    }
+  }
+
+  .add-plans__link-container--desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 8px;
+  }
+
+  .add-plans__link-text {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    color: rgba(0, 0, 0, 0.6);
+
+    &--active {
+      color: #000000;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 6px;
+      height: 6px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 50%;
+      left: -42px;
+      top: 6px;
+    }
+  }
+
+  .add-plans__link-text--active::before {
+    background-color: #000000;
+  }
+}

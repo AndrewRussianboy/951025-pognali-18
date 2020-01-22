@@ -1,0 +1,108 @@
+.button-form {
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+
+  width: 100%;
+  background-color: #ffd74b;
+
+  color: #161c35;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+
+  padding-top: 5px;
+  padding-bottom: 4px;
+
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+
+  &--back {
+    background-color: transparent;
+  }
+
+  &:hover {
+    background-color: #ffbd30;
+  }
+
+  &:focus {
+    color: rgba(29, 46, 91, 0.3);
+  }
+}
+
+.button-form--back:hover {
+  background-color: transparent;
+  color: rgba(29, 46, 91, 0.7);
+}
+
+.button-form--back:focus {
+  background-color: transparent;
+  color: rgba(29, 46, 91, 0.3);
+}
+
+.button-form__next,
+.button-form__previous {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .button-form {
+    position: relative;
+    font-size: 24px;
+    text-transform: none;
+    text-align: left;
+
+    width: 285px;
+
+    border-radius: 20px;
+
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-left: 34px;
+
+    &--back {
+      width: 250px;
+      text-align: right;
+    }
+  }
+
+  .button-form--back {
+    &:hover {
+      opacity: 0.7;
+      background-color: transparent;
+    }
+
+    &:focus {
+      opacity: 0.3;
+      background-color: transparent;
+    }
+  }
+
+  .button-form__next {
+    position: absolute;
+    display: block;
+    content: "dsa124124124das";
+    top: 32px;
+    right: 36px;
+    width: 10px;
+    height: 14px;
+    fill: #1d2e5b;
+  }
+
+  .button-form__previous {
+    position: absolute;
+    display: block;
+    content: "dsa124124124das";
+    top: 32px;
+    left: 64px;
+    width: 10px;
+    height: 14px;
+    fill: #1d2e5b;
+  }
+
+  .button-form:focus svg {
+    opacity: 0.3;
+  }
+}
