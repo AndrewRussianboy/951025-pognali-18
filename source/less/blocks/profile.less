@@ -69,10 +69,12 @@
     top: 120px;
     background-color: #ff8d30;
   }
+
   &--2 {
     top: 185px;
     background-color: #ffbd30;
   }
+
   &--3 {
     top: 250px;
     background-color: #ffd74b;
@@ -99,7 +101,6 @@
 }
 
 @media (min-width: @tablet-width) {
-
   .profile {
     margin-top: -60px;
     padding-bottom: 86px;
@@ -139,7 +140,7 @@
       position: absolute;
       content: "";
       top: 74px;
-      right: 0px;
+      right: 0;
       width: 198px;
       height: 285px;
       border-radius: 20px;
@@ -169,6 +170,7 @@
     height: 66px;
     font-size: 28px;
     line-height: 28px;
+    order: -1;
 
     &--1 {
       top: 116px;
@@ -189,10 +191,6 @@
 
   .profile__list tr {
     display: flex;
-  }
-
-  .profile__number {
-    order: -1;
   }
 
   .profile__button-container {

@@ -26,7 +26,7 @@
   fill: #cacbd1;
 
   &--active {
-  fill: #1d2e5b;
+    fill: #1d2e5b;
   }
 }
 
@@ -61,7 +61,7 @@
   }
 }
 
-.transport__list-tooltip--avia:after {
+.transport__list-tooltip--avia::after {
   position: absolute;
 
   content: "";
@@ -72,7 +72,7 @@
   border-bottom: 8px solid #101d41;
 }
 
-.transport__list-tooltip--auto:after {
+.transport__list-tooltip--auto::after {
   position: absolute;
 
   content: "";
@@ -83,7 +83,7 @@
   border-bottom: 8px solid #101d41;
 }
 
-.transport__list-tooltip--bicycle:after {
+.transport__list-tooltip--bicycle::after {
   position: absolute;
 
   content: "";
@@ -94,7 +94,7 @@
   border-bottom: 8px solid #101d41;
 }
 
-.transport__list-tooltip--walk:after {
+.transport__list-tooltip--walk::after {
   position: absolute;
 
   content: "";
@@ -128,14 +128,17 @@
       width: 19px;
       height: 21px;
     }
+
     &--car {
       width: 17px;
       height: 21px;
     }
+
     &--bicycle {
       width: 24px;
       height: 21px;
     }
+
     &--walk {
       width: 20px;
       height: 21px;
@@ -143,7 +146,6 @@
   }
 
   .transport__list-tooltip {
-
     &--avia {
       top: 40px;
       left: -64px;
@@ -158,6 +160,7 @@
       left: -58px;
       top: 100px;
     }
+
     &--walk {
       top: 130px;
       left: -49px;

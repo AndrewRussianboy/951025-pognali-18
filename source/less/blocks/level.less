@@ -2,6 +2,22 @@
   font-size: 24px;
   font-weight: 700;
   color: #1d2e5b;
+
+  &--99 {
+    .level__round-progress-bar(99, 39px, 3px, orange);
+  }
+
+  &--80 {
+    .level__round-progress-bar(80, 39px, 3px, orange);
+  }
+
+  &--25 {
+    .level__round-progress-bar(25, 39px, 3px, orange);
+  }
+
+  &--50 {
+    .level__round-progress-bar(50, 39px, 3px, orange);
+  }
 }
 
 .level__wrap {
@@ -32,24 +48,6 @@
 .level__half {
   position: absolute;
   border-radius: 50%;
-}
-
-.level {
-  &--99 {
-    .level__round-progress-bar(99, 39px, 3px, orange);
-  }
-
-  &--80 {
-    .level__round-progress-bar(80, 39px, 3px, orange);
-  }
-
-  &--25 {
-    .level__round-progress-bar(25, 39px, 3px, orange);
-  }
-
-  &--50 {
-    .level__round-progress-bar(50, 39px, 3px, orange);
-  }
 }
 
 .level__round-progress-bar (@level: 50, @size: 65px, @border-width: 5px, @border-color: orange, @bg-color: transparent) when (@level > 50) {

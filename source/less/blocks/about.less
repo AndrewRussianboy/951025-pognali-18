@@ -54,7 +54,7 @@
     width: 292px;
     height: 352px;
 
-    background-image: url(../img/about-mobile@1x.png);
+    background-image: url("../img/about-mobile@1x.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 292px auto;
@@ -64,7 +64,7 @@
 
 @media (min-resolution: @retina-dppx) {
   .about__title::before {
-    background-image: url(../img/about-mobile@2x.png);
+    background-image: url("../img/about-mobile@2x.png");
   }
 }
 
@@ -92,7 +92,6 @@
 }
 
 @media (min-width: @tablet-width) {
-
   .about {
     padding-top: 138px;
     padding-bottom: 90px;
@@ -134,7 +133,7 @@
     &::before {
       width: 376px;
       height: 1278px;
-      background-image: url(../img/about-tablet@2x.png);
+      background-image: url("../img/about-tablet@2x.png");
       background-position: right top 40px;
       background-size: 376px auto;
       z-index: -1;
@@ -144,7 +143,7 @@
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     .about__title::before {
-      background-image: url(../img/about-tablet@2x.png);
+      background-image: url("../img/about-tablet@2x.png");
     }
   }
 
@@ -195,7 +194,7 @@
   }
 
   .about__button:focus svg {
-    fill:rgba(29, 46, 91, 0.3);
+    fill: rgba(29, 46, 91, 0.3);
   }
 
   .about__button svg {
@@ -205,8 +204,6 @@
     fill: #1d2e5b;
   }
 }
-
-
 
 @media (min-width: @desktop-width) {
   .about {
@@ -238,7 +235,7 @@
     &::before {
       top: -47px;
       right: 60px;
-      background-image: url(../img/about-desktop@1x.png);
+      background-image: url("../img/about-desktop@1x.png");
       background-size: 630px auto;
       background-position: 0 0;
       width: 630px;
@@ -248,7 +245,7 @@
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     .about__title::before {
-      background-image: url(../img/about-tablet@2x.png);
+      background-image: url("../img/about-tablet@2x.png");
       background-size: 1260px auto;
     }
   }

@@ -28,7 +28,7 @@
     right: 50px;
     width: 5px;
     height: 10px;
-    background-image: url(../img/small-arrow.svg);
+    background-image: url("../img/small-arrow.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 0.3;
@@ -67,6 +67,10 @@
 
   &--add {
     margin-bottom: 25px;
+    width: 220px;
+    background-color: #edeff6;
+    border: 1px #edeff6 solid;
+    box-sizing: border-box;
   }
 }
 
@@ -84,7 +88,7 @@
     right: 50px;
     width: 5px;
     height: 10px;
-    background-image: url(../img/small-arrow.svg);
+    background-image: url("../img/small-arrow.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 0.3;
@@ -100,6 +104,7 @@
 .step-two__open-country {
   border: none;
   padding: 0;
+  background-color: transparent;
 }
 
 .step-two__close-country {
@@ -114,8 +119,8 @@
   cursor: pointer;
 }
 
-.step-two__close-country:before,
-.step-two__close-country:after {
+.step-two__close-country::before,
+.step-two__close-country::after {
   position: absolute;
   content: "";
   right: 5px;
@@ -125,11 +130,11 @@
   background-color: #a5a7ac;
 }
 
-.step-two__close-country:before {
+.step-two__close-country::before {
   transform: rotate(45deg);
 }
 
-.step-two__close-country:after {
+.step-two__close-country::after {
   transform: rotate(-45deg);
 }
 
@@ -151,6 +156,7 @@
     height: 1px;
     background-color: #bdbbbc;
     border-radius: 4px;
+    transform: rotate(45deg);
   }
 
   &::before {
@@ -162,6 +168,7 @@
     height: 1px;
     background-color: #bdbbbc;
     border-radius: 4px;
+    transform: rotate(-45deg);
   }
 }
 
@@ -202,21 +209,6 @@
 
 .step-two__open-country--chosen {
   right: 62px;
-}
-
-.step-two__open-country:after {
-  transform: rotate(45deg);
-}
-
-.step-two__open-country:before {
-  transform: rotate(-45deg);
-}
-
-.step-two__country-input--add {
-  width: 220px;
-  background-color: #edeff6;
-  border: 1px #edeff6 solid;
-  box-sizing: border-box;
 }
 
 .step-two__add-country {
@@ -302,8 +294,8 @@
 
   .step-two__country::after,
   .step-two__choose-country-container::after {
-      display: none;
-    }
+    display: none;
+  }
 
   .step-two__country-input {
     width: 370px;
@@ -384,6 +376,7 @@
       width: 20px;
       height: 2px;
     }
+
     &::after {
       width: 20px;
       height: 2px;

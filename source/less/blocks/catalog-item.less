@@ -12,7 +12,7 @@
   border-radius: 20px;
 
   &:hover {
-    box-shadow: 0 0 40px rgba(0,0,0,0.2);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -37,7 +37,7 @@
   transition: transform 1s ease-out;
 
   &:hover {
-    transform: scale(1.1)
+    transform: scale(1.1);
   }
 }
 
@@ -58,7 +58,6 @@
   font-style: normal;
   font-size: 20px;
   line-height: 20px;
-  text-align: center;
   margin: 0;
   text-align: left;
 
@@ -192,6 +191,7 @@
 .catalog-item__like-button {
   display: inline-flex;
   justify-content: center;
+  align-items: center;
 
   width: 31px;
   height: 31px;
@@ -224,7 +224,6 @@
 }
 
 @media (min-width: @tablet-width) {
-
   .catalog-item {
     width: 100%;
     padding: 32px 0 8px 0;
@@ -238,7 +237,9 @@
   .catalog-item__image-link {
     width: 190px;
     height: 190px;
-
+    top: 35px;
+    left: 35px;
+    margin: 0;
     border-radius: 20px;
   }
 
@@ -256,15 +257,6 @@
 
   .catalog-item__like {
     position: static;
-  }
-
-  .catalog-item__image-link {
-    top: 35px;
-    left: 35px;
-
-    width: 190px;
-    height: 190px;
-    margin: 0;
   }
 
   .catalog-item__name-link {
@@ -349,12 +341,12 @@
     width: 50px;
     height: 50px;
     order: 2;
-}
+  }
 
-.catalog-item__like-button-svg {
-  width: 20px;
-  height: 17px;
-}
+  .catalog-item__like-button-svg {
+    width: 20px;
+    height: 17px;
+  }
 
   .catalog-item__like-count {
     font-size: 20px;
@@ -386,9 +378,6 @@
     border-radius: 0;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-  }
-
-  .catalog-item__image {
     width: 285px;
     height: 285px;
   }
@@ -400,8 +389,8 @@
     width: 285px;
     height: 285px;
     margin: 0;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .catalog-item__name-link {

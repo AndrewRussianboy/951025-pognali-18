@@ -22,6 +22,7 @@
   width: 9px;
   height: 16px;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .calendar__previous-month::after,
@@ -111,10 +112,6 @@
 
   padding-left: 10px;
   padding-right: 10px;
-}
-
-.calendar__weekday--holiday {
-  color: #ff5c23;
 }
 
 .calendar__days-table {
@@ -214,14 +211,13 @@
     margin-bottom: 46px;
   }
 
-  .calendar__day{
+  .calendar__day {
     height: 69px;
-    .form-font-style-tablet
+    .form-font-style-tablet;
   }
 }
 
 @media (min-width: @desktop-width) {
-
   .calendar__title-container {
     margin-bottom: 12px;
   }
@@ -230,7 +226,6 @@
     width: 999px;
     margin-bottom: 56px;
   }
-
 
   .calendar__weekdays-container {
     margin-bottom: 13px;

@@ -28,7 +28,7 @@
     left: -33px;
     top: 2px;
 
-    background-image: url(../img/show-more-plus.svg);
+    background-image: url("../img/show-more-plus.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -55,8 +55,7 @@
 
 .show-companions__button {
   border: none;
-  padding: 0;
-
+  background-color: transparent;
   width: 135px;
   padding: 0;
   padding-top: 15px;
@@ -75,11 +74,11 @@
   }
 }
 
-.show-companions__button:hover .show-companions__button-arrow{
+.show-companions__button:hover .show-companions__button-arrow {
   opacity: 0.6;
 }
 
-.show-companions__button:focus .show-companions__button-arrow{
+.show-companions__button:focus .show-companions__button-arrow {
   opacity: 0.3;
 }
 
@@ -95,11 +94,6 @@
     width: 688px;
   }
 
-  .show-companions__more {
-    margin-bottom: 46px;
-    margin-left: 42px;
-  }
-
   .show-companions__container {
     background-color: #ffffff;
 
@@ -113,6 +107,8 @@
 
   .show-companions__more {
     font-size: 20px;
+    margin-bottom: 46px;
+    margin-left: 42px;
 
     &::before {
       width: 27px;
