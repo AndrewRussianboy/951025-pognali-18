@@ -7,4 +7,3 @@ document.addEventListener('scroll', function () {
     pageHeaderName.style.display='block';
   }
 })
-

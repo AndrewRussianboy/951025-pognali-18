@@ -35,15 +35,15 @@
 
 .person-level {
   &--99 {
-    .round-progress-bar(99, 54px, 3px, orange, rgba(0, 0, 0, 0.5));
+    .person-level__round-progress-bar(99, 54px, 3px, orange, rgba(0, 0, 0, 0.5));
   }
 
   &--80 {
-    .round-progress-bar(80, 54px, 3px, orange, rgba(0, 0, 0, 0.5));
+    .person-level__round-progress-bar(80, 54px, 3px, orange, rgba(0, 0, 0, 0.5));
   }
 }
 
-.round-progress-bar (@level: 50, @size: 65px, @border-width: 5px, @border-color: orange, @bg-color: transparent) when (@level > 50) {
+.person-level__round-progress-bar (@level: 50, @size: 65px, @border-width: 5px, @border-color: orange, @bg-color: transparent) when (@level > 50) {
 
   @full-size: @size + @border-width * 2;
 
@@ -70,7 +70,7 @@
   }
 }
 
-.round-progress-bar (@level: 50, @size: 65px, @border-width: 5px, @border-color: orange, @bg-color: transparent) when (@level <= 50) {
+.person-level__round-progress-bar (@level: 50, @size: 65px, @border-width: 5px, @border-color: orange, @bg-color: transparent) when (@level <= 50) {
 
   @full-size: @size + @border-width * 2;
 
@@ -86,8 +86,8 @@
   }
 
   .level__progress {
-      clip: rect(auto, (@full-size), (@full-size), (@full-size/2));
-   }
+    clip: rect(auto, (@full-size), (@full-size), (@full-size/2));
+  }
 
   .level__half {
     width: @size;
@@ -130,4 +130,3 @@
   font-size: 14px;
   line-height: 14px;
 }
-

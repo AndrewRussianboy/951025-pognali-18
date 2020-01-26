@@ -4,10 +4,10 @@ var close = document.querySelector(".business-rates__button-close");
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popup.classList.add("modal-business-show");
+  popup.classList.add("modal-business--show");
 });
 
 close.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popup.classList.remove("modal-business-show");
+  popup.classList.remove("modal-business--show");
 });

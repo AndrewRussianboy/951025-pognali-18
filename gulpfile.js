@@ -71,7 +71,7 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/less/**/*.less", gulp.series("css"));
+  gulp.watch("source/less/**/*.less", gulp.series("css", "refresh"));
   gulp.watch("source/img/*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
@@ -106,4 +106,3 @@ gulp.task("build", gulp.series(
 ));
 
 gulp.task("start", gulp.series("build", "server"));
-

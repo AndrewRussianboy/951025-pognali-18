@@ -1,7 +1,7 @@
 .interest {
   position: relative;
   z-index: 3;
-  padding-top: 145px;
+  padding-top: 142px;
   padding-bottom: 40px;
   margin-top: -70px;
   background-color: #192144;
@@ -36,7 +36,6 @@
   text-align: center;
 
   &--register {
-    width: 154px;
     margin-bottom: 0px;
   }
 }
@@ -138,8 +137,7 @@
 }
 
 .interest__phone {
-  margin-bottom: 18px;
-  margin-left: 10px;
+  margin-bottom: 22px;
   position: relative;
 }
 
@@ -169,12 +167,11 @@
 }
 
 .interest__mail-svg {
-  top: -8px;
+  top: -12px;
 }
 
 .interest__mail {
   position: relative;
-  margin-left: 10px;
 }
 
 .interest__mail-icon {
@@ -197,9 +194,11 @@
 .interest__mail {
   display: block;
   font-size: 16px;
+  font-weight: bold;
   line-height: 22px;
   color: #ffd74b;
   text-transform: uppercase;
+  margin-left: 25px;
 
   &:hover {
     color: #ffbd30;
@@ -212,7 +211,8 @@
 
 @media (min-width: @tablet-width) {
   .interest {
-    padding-bottom: 80px;
+    padding-top: 146px;
+    padding-bottom: 78px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
@@ -301,24 +301,29 @@
     height: 67px;
 
     left: -91px;
-    top: -24px;
+    top: -23px;
   }
 
   .interest__phone,
   .interest__mail {
     font-size: 28px;
     line-height: 28px;
+    margin-left: 23px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .interest {
-    padding-top: 178px;
+    padding-top: 175px;
     padding-bottom: 95px;
   }
 
   .interest__container {
     width: 1175px;
+  }
+
+  .interest__title {
+    margin-bottom: 58px;
   }
 
   .interest__contacts {
@@ -343,7 +348,7 @@
     box-sizing: border-box;
 
     padding-left: 34px;
-    padding-right: 34px;
+    padding-right: 38px;
   }
 
   .interest__mail-register {
@@ -357,7 +362,7 @@
   }
 
   .interest__text {
-    margin-bottom: 52px;
+    margin-bottom: 56px;
     width: 775px;
 
     &--down {
@@ -377,6 +382,7 @@
   .interest__phone {
     left: 0;
     font-weight: bold;
+    margin-left: 11px;
   }
 
   .interest__phone {
@@ -401,4 +407,3 @@
     height: 26px;
   }
 }
-

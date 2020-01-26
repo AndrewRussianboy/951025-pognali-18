@@ -89,6 +89,10 @@
   }
 }
 
+.companions__tablet {
+  display: none;
+}
+
 .companions__button {
   position: relative;
 }
@@ -170,6 +174,10 @@
     }
   }
 
+  .companions__tablet {
+    display: block;
+  }
+
   .companions__button svg {
     right: 35px;
     top: 32px;
@@ -179,17 +187,17 @@
 @media (min-width: @desktop-width) {
 
   .companions {
+    padding-top: 194px;
     padding-bottom: 84px;
   }
 
   .companions__container {
-    width: 1440px;
+    width: 1250px;
   }
 
   .companions__container--flex {
     display: flex;
-    justify-content: flex-start;
-    padding-left: 130px;
+    margin-left: 36px;
   }
 
   .companions__title {
@@ -198,7 +206,7 @@
 
   .companions__header {
     padding: 0;
-    margin-right: 195px;
+    margin-right: 194px;
 
     &::after {
       top: 250px;
@@ -211,11 +219,15 @@
     }
   }
 
+  .companions__description {
+    margin-bottom: 42px;
+  }
+
   .companions__button {
-    width: 274px;
+    width: 280px;
 
     margin-top: -160px;
-    margin-left: 130px;
+    margin-left: 36px;
     margin-bottom: 50px;
     position: relative;
   }

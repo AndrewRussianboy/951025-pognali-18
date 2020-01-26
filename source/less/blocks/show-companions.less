@@ -42,10 +42,6 @@
   }
 }
 
-.show-companions__container {
-  padding-bottom: 46px;
-}
-
 .show-companions__list {
   margin-bottom: 20px;
 }
@@ -101,6 +97,7 @@
 
   .show-companions__more {
     margin-bottom: 46px;
+    margin-left: 42px;
   }
 
   .show-companions__container {
@@ -126,12 +123,14 @@
   }
 
   .show-companions__slider {
-    padding-right: 26px;
+    padding-right: 36px;
     padding-left: 30px;
+    justify-content: space-between;
+    width: 55px;
   }
 
   .show-companions__button {
-    width: 30px;
+    width: 10px;
 
     &--previous {
       border-right: none;
@@ -142,5 +141,15 @@
 @media (min-width: @desktop-width) {
   .show-companions {
     width: 950px;
+  }
+
+  .show-companions__more {
+    margin-left: -20px;
+    margin-bottom: 66px;
+  }
+
+  .show-companions__slider {
+    width: 63px;
+    padding-right: 44px;
   }
 }

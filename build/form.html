@@ -2,7 +2,16 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Погнали</title>
+    <link rel="preload" href="fonts/bloggersans.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/bloggersans-bolditalic.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/bloggersans-italic.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/bloggersans-lightitalic.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/bloggersans-mediumitalic.woff2" as="font" type="font/woff2">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
@@ -21,7 +30,7 @@
               <img class="page-header__logo-image" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" width="100" height="19" alt="Логотип сервиса Погнали?">
             </picture>
           </a>
-          <a class="page-header__logo--blue">
+          <a class="page-header__logo page-header__logo--blue">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
@@ -145,8 +154,8 @@
                 <span class="your-level__level">level</span>
               </div>
               <div class="your-level__progress">
-                <div class="your-level__half level__half--left"></div>
-                <div class="your-level__half level__half--right"></div>
+                <div class="your-level__half your-level__half--left"></div>
+                <div class="your-level__half your-level__half--right"></div>
               </div>
             </div>
           </div>
@@ -180,25 +189,25 @@
                 <div class="profile-transport__container">
                   <input class="visually-hidden profile-transport__checkbox" type="checkbox" name="plane" id="filter-plane">
                   <label class="profile-transport__label" for="filter-plane">
-                    <svg class="profile-transport__svg profile-transport__svg--on profile-transport__svg--plane" viewBox="0 0 19 21">
+                    <svg class="profile-transport__svg profile-transport__svg--on profile-transport__svg--plane" viewBox="0 0 19 21" width="14" height="16">
                       <use xlink:href="img/sprite.svg#plane"></use>
                     </svg>
                   </label>
                   <input class="visually-hidden profile-transport__checkbox" type="checkbox" name="bus" id="filter-bus">
                   <label class="profile-transport__label" for="filter-bus">
-                    <svg class="profile-transport__svg profile-transport__svg--on profile-transport__svg--bus" viewBox="0 0 17 21">
+                    <svg class="profile-transport__svg profile-transport__svg--on profile-transport__svg--bus" viewBox="0 0 17 21" width="13" height="16">
                       <use xlink:href="img/sprite.svg#bus"></use>
                     </svg>
                   </label>
                   <input class="visually-hidden profile-transport__checkbox" type="checkbox" name="bike" id="filter-bike">
                   <label class="profile-transport__label" for="filter-bike">
-                    <svg class="profile-transport__svg profile-transport__svg--off profile-transport__svg--bike" viewBox="0 0 24 21">
+                    <svg class="profile-transport__svg profile-transport__svg--off profile-transport__svg--bike" viewBox="0 0 24 21" width="19" height="17">
                       <use xlink:href="img/sprite.svg#bike"></use>
                     </svg>
                   </label>
                   <input class="visually-hidden profile-transport__checkbox" type="checkbox" name="run" id="filter-run">
                   <label class="profile-transport__label" for="filter-run">
-                    <svg class="profile-transport__svg profile-transport__svg--on profile-transport__svg--run" viewBox="0 0 20 21">
+                    <svg class="profile-transport__svg profile-transport__svg--on profile-transport__svg--run" viewBox="0 0 20 21" width="15" height="17">
                       <use xlink:href="img/sprite.svg#run"></use>
                     </svg>
                   </label>
@@ -276,7 +285,7 @@
                     </h3>
                     <p class="step-one__description">
                       Укажите предпочтительное
-                      количество попутчиков, которых
+                      количество попутчиков, которых <br class="step-one__desktop">
                       вы хотели бы позвать в поездку
                       и ее предполагаемую
                       длительность.
@@ -293,18 +302,18 @@
                     <span class="step-one__i-search">Ищу попутчиков:</span>
                     <span class="step-one__companions-number">Чел.</span>
                     <div class="step-one__container-companions">
-                      <button class="step-one__input-minus"></button>
+                      <button class="step-one__input-minus" type="button"></button>
                       <input type="text" name="number-of-companions" value="2">
-                      <button class="step-one__input-plus"></button>
+                      <button class="step-one__input-plus" type="button"></button>
                     </div>
                   </div>
                   <div class="step-one__duration">
                     <span class="step-one__duration-concrete">Длительность:</span>
                     <span class="step-one__days">Дн.</span>
                     <div class="step-one__container-duration">
-                      <button class="step-one__input-minus"></button>
+                      <button class="step-one__input-minus" type="button"></button>
                       <input type="text" name="number-of-companions" value="2">
-                      <button class="step-one__input-plus"></button>
+                      <button class="step-one__input-plus" type="button"></button>
                     </div>
                   </div>
                   <div class="step-one__children-allowed">
@@ -469,7 +478,7 @@
                     <button class="step-two__open-country step-two__open-country--chosen" type="button">
                       <span class="visually-hidden">Открыть</span>
                     </button>
-                    <svg class="step-two__country-flag step-two__country-flag--bosnia" viewBox="0 0 71 48">
+                    <svg class="step-two__country-flag step-two__country-flag--bosnia" viewBox="0 0 71 48" width="35" height="24">
                       <use xlink:href="img/sprite.svg#flag-bosnia"></use>
                     </svg>
                     <span class="step-two__circle"></span>
@@ -482,7 +491,7 @@
                     <button class="step-two__open-country step-two__open-country--chosen" type="button">
                       <span class="visually-hidden">Открыть</span>
                     </button>
-                    <svg class="step-two__country-flag step-two__country-flag--czech" viewBox="0 0 71 48">
+                    <svg class="step-two__country-flag step-two__country-flag--czech" viewBox="0 0 71 48" width="35" height="24">
                       <use xlink:href="img/sprite.svg#flag-czech"></use>
                     </svg>
                     <span class="step-two__circle"></span>
@@ -505,18 +514,18 @@
                     <span class="step-two__circle step-two__circle--hole step-two__circle--grey"></span>
                   </div>
                   <div class="step-two__buttons">
-                    <button class="step-two__button button-form" type="button">
+                    <a class="step-two__button button-form" href="#">
                       Следующий шаг
                       <svg class="button-form__next" width="10" height="14">
                         <use xlink:href="img/sprite.svg#triangle-arrow-right"></use>
                       </svg>
-                    
-                    </button><button class="step-two__button button-form button-form--back" type="button">
+                    </a>
+                    <a class="step-two__button button-form button-form--back" href="#">
                       <svg class="button-form__previous" width="10" height="14">
                         <use xlink:href="img/sprite.svg#triangle-arrow-left"></use>
                       </svg>
                       На шаг назад
-                    </button>
+                    </a>
                   </div>
                 </form>
               </div>
@@ -545,43 +554,45 @@
                     <a class="add-plans__link-text" href="#">Развлечения</a>
                   </div>
                 </div>
-                <div class="step-three__country">
-                  <div class="step-three__country-gradient">
-                    <span class="step-three__country-title">
-                      Босния и Герцеговина
-                    </span>
-                  </div>
-                  <svg class="step-three__country-flag step-three__country-flag--bosnia" viewBox="0 0 71 48">
-                    <use xlink:href="img/sprite.svg#flag-bosnia"></use>
-                  </svg>
-                </div>
-                <textarea class="step-three__textarea" name="text" placeholder="План действий" required=""></textarea>
-                <div class="step-three__country">
-                  <div class="step-three__country-gradient step-three__country-gradient--last-child">
-                    <span class="step-three__country-title">
-                      Чехия
-                    </span>
-                  </div>
-                  <svg class="step-three__country-flag step-three__country-flag--czech" viewBox="0 0 71 48">
-                    <use xlink:href="img/sprite.svg#flag-czech"></use>
-                  </svg>
-                </div>
-                <textarea class="step-three__textarea step-three__textarea--second" name="text" required="">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
-                </textarea>
-                <div class="step-three__buttons">
-                  <button class="step-three__button button-form" type="submit">
-                    Отправить
-                    <svg class="button-form__next" width="10" height="14">
-                      <use xlink:href="img/sprite.svg#triangle-arrow-right"></use>
+                <form class="step-three__form" action="https://echo.htmlacademy.ru" method="POST">
+                  <div class="step-three__country">
+                    <div class="step-three__country-gradient">
+                      <span class="step-three__country-title">
+                        Босния и Герцеговина
+                      </span>
+                    </div>
+                    <svg class="step-three__country-flag step-three__country-flag--bosnia" viewBox="0 0 71 48">
+                      <use xlink:href="img/sprite.svg#flag-bosnia"></use>
                     </svg>
-                  </button>
-                  <button class="step-three__button button-form button-form--back" type="button">
-                    <svg class="button-form__previous" width="10" height="14">
-                      <use xlink:href="img/sprite.svg#triangle-arrow-left"></use>
+                  </div>
+                  <textarea class="step-three__textarea" name="text" placeholder="План действий" required=""></textarea>
+                  <div class="step-three__country">
+                    <div class="step-three__country-gradient step-three__country-gradient--last-child">
+                      <span class="step-three__country-title">
+                        Чехия
+                      </span>
+                    </div>
+                    <svg class="step-three__country-flag step-three__country-flag--czech" viewBox="0 0 71 48">
+                      <use xlink:href="img/sprite.svg#flag-czech"></use>
                     </svg>
-                    На шаг назад
-                  </button>
-                </div>
+                  </div>
+                  <textarea class="step-three__textarea step-three__textarea--second" name="text" required="">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
+                  </textarea>
+                  <div class="step-three__buttons">
+                    <button class="step-three__button button-form" type="submit">
+                      Отправить
+                      <svg class="button-form__next" width="10" height="14">
+                        <use xlink:href="img/sprite.svg#triangle-arrow-right"></use>
+                      </svg>
+                    </button>
+                    <a class="step-three__button button-form button-form--back" href="#">
+                      <svg class="button-form__previous" width="10" height="14">
+                        <use xlink:href="img/sprite.svg#triangle-arrow-left"></use>
+                      </svg>
+                      На шаг назад
+                    </a>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -700,17 +711,15 @@
             </tr>
           </table>
           <ul class="modal-country__list">
-            <div class="modal-country__list-container">
-              <li class="modal-country__item">Афганистан</li>
-              <li class="modal-country__item">Албания</li>
-              <li class="modal-country__item">Алгерия</li>
-              <li class="modal-country__item">Андорра</li>
-              <li class="modal-country__item">Аргентина</li>
-              <li class="modal-country__item">Армения</li>
-              <li class="modal-country__item">Австралия</li>
-              <li class="modal-country__item">Австрия</li>
-              <li class="modal-country__item">Азербайджан</li>
-            </div>
+            <li class="modal-country__item">Афганистан</li>
+            <li class="modal-country__item">Албания</li>
+            <li class="modal-country__item">Алгерия</li>
+            <li class="modal-country__item">Андорра</li>
+            <li class="modal-country__item">Аргентина</li>
+            <li class="modal-country__item">Армения</li>
+            <li class="modal-country__item">Австралия</li>
+            <li class="modal-country__item">Австрия</li>
+            <li class="modal-country__item">Азербайджан</li>
           </ul>
         </div>
       </div>
@@ -720,6 +729,7 @@
     <script src="js/script-form.js"></script>
     <script src="js/script.js"></script>
     <script src="js/form-modal.js"></script>
+    <script src="js/picturefill.min.js"></script>
 
   </body>
 </html>

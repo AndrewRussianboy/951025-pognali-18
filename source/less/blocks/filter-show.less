@@ -1,12 +1,10 @@
 .filter-show {
-  position: absolute;
   z-index: 10;
   background-color: #e2e5f2;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   margin: auto;
-  left: 0;
-  right: 0;
+  padding-top: 8px;
 }
 
 .filter-show--hidden {
@@ -45,6 +43,10 @@
   margin-bottom: 38px;
   padding: 0;
   list-style: none;
+
+  &--tablet {
+    display: none;
+  }
 }
 
 .filter-show__country-link {
@@ -144,6 +146,20 @@
   .filter-show__list {
     width: 155px;
     margin: 0;
+
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+      font-size: 20px;
+      padding-top: 4px;
+    }
+  }
+
+  .filter-show__country-link {
+    font-size: 20px;
   }
 
   .filter-show__item {
@@ -161,13 +177,15 @@
     font-size: 20px;
     padding-top: 40px;
     padding-bottom: 32px;
+    padding-left: 281px;
+    padding-right: 247px;
     margin-bottom: 74px;
     width: 100%;
   }
 
   .filter-show__svg {
-    top: 42px;
-    left: 230px;
+    top: 41px;
+    left: 242px;
     width: 19px;
     height: 19px;
   }
@@ -176,7 +194,7 @@
 @media (min-width: @desktop-width) {
 
   .filter-show__container {
-    width: 1200px;
+    width: 1249px;
   }
 
   .filter-show__wrapper {
@@ -184,6 +202,10 @@
   }
 
   .filter-show__svg {
-    left: 510px;
+    left: 558px;
+  }
+
+  .filter-show__button {
+    margin-top: 16px;
   }
 }

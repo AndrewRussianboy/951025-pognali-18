@@ -57,7 +57,7 @@
   transition: all 1s ease-out;
 
   &:hover {
-   transform: scale(1.1)
+    transform: scale(1.1)
   }
 }
 
@@ -101,7 +101,7 @@
   color: #1d2e5b;
 
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 
   margin-left: 11px;
   margin-right: 18px;
@@ -126,7 +126,11 @@
 
   text-align: center;
 
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+
+  &--demin {
+    margin-left: 13px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -184,7 +188,7 @@
 
   .companions-list__person-container {
     padding-top: 41px;
-    padding-bottom: 29px;
+    padding-bottom: 25px;
     width: 285px;
 
     border-bottom-left-radius: 20px;
@@ -197,9 +201,13 @@
   }
 
   .companions-list__tags {
-    margin-bottom: 21px;
+    margin-bottom: 24px;
     font-size: 20px;
     line-height: 1.2;
+
+    &--demin {
+      margin-left: 0px;
+    }
   }
 
   .companions-list__country-flags {
@@ -219,8 +227,16 @@
     }
   }
 
+  .companions-list__person-container {
+    padding-top: 45px;
+  }
+
   .companions-list__person-level {
     left: 22px;
     top: 22px;
+  }
+
+  .companions-list__tags {
+    margin-bottom: 21px
   }
 }

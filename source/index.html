@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8"> <!-- Добавить вьюпорт в разметку см скриншот на рабочем столе -->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Погнали</title>
+    <link rel="preload" href="fonts/bloggersans.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/bloggersans-bolditalic.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/bloggersans-italic.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/bloggersans-lightitalic.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/bloggersans-mediumitalic.woff2" as="font" type="font/woff2">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
-
-    <div style="display:none">
-      <include src="build/img/sprite.svg"></include>
-    </div>
 
     <header class="page-header">
       <div class="page-header__container">
@@ -26,7 +30,7 @@
               <img class="page-header__logo-image" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" width="100" height="19" alt="Логотип сервиса Погнали?">
             </picture>
           </a>
-          <a class="page-header__logo--blue">
+          <a class="page-header__logo page-header__logo--blue">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
@@ -192,15 +196,15 @@
           </li>
           <li class="use-algoritm__item use-algoritm__item--2">
             <span class="use-algoritm__rec">Изучите идеи <br> путешественников</span>
-            <span class="use-algoritm__number">2</span>
+            <span class="use-algoritm__number use-algoritm__number--2">2</span>
           </li>
           <li class="use-algoritm__item use-algoritm__item--3">
             <span class="use-algoritm__rec">Находите тех, <br> кто похож на вас</span>
-            <span class="use-algoritm__number">3</span>
+            <span class="use-algoritm__number use-algoritm__number--3">3</span>
           </li>
           <li class="use-algoritm__item use-algoritm__item--4">
             <span class="use-algoritm__rec">Путешествуйте <br> вместе!</span>
-            <span class="use-algoritm__number">4</span>
+            <span class="use-algoritm__number use-algoritm__number--4">4</span>
           </li>
         </ul>
       </section>
@@ -211,15 +215,15 @@
             О сервисе
           </h2>
           <p class="about__text">
-            Любое путешествие веселее
-            с попутчиками, которые на
+            Любое путешествие веселее <br class="about__mobile">
+            с попутчиками, которые на <br class="about__mobile">
             одной волне с тобой! Делитесь
-            своими идеями путешествий и
+            своими идеями путешествий <br class="about__tablet"> и
             черпайте вдохновение в чужих.
             <b class="about__text about__text--bold">
               А если найдете кого-то
               близкого по духу — скорее
-              зовите его в совместный трип!
+              зовите в совместный трип!
             </b>
           </p>
           <a class="about__button" href="about.html">
@@ -237,7 +241,7 @@
             <header class="direction__header">
               <h2 class="direction__title">Направления</h2>
               <p class="direction__description">
-                Мы не продаем туры
+                Мы не продаем туры <br>
                 и ничего не рекламируем.
                 Люди сами пишут о странах, куда хотели бы отправиться
                 и чем можно там заняться.
@@ -258,7 +262,7 @@
                   <span class="direction-list__country">
                     Тайланд
                   </span>
-                  <small class="direction-list__short-description">Джунгли зовут</small>
+                  <small class="direction-list__short-description">Джунгли зовут!</small>
                   <span class="direction-list__people">
                     18321
                   </span>
@@ -288,7 +292,7 @@
                 <p class="direction-list__image direction-list__image--czech">
                   <picture>
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/czech-desktop@1x.webp 1x, img/czech-desktop@2x.webp 2x">
-                    <source type="image/webp" srcset="img/czech-mobile@1x.webp 1x img/czech-mobile@2x.webp 2x">
+                    <source type="image/webp" srcset="img/czech-mobile@1x.webp 1x, img/czech-mobile@2x.webp 2x">
 
                     <source media="(min-width: 768px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
                     <img src="img/czech-mobile@1x.jpg" srcset="img/czech-mobile@2x.jpg 2x" width="270" height="110" alt="Чехия">
@@ -324,11 +328,11 @@
               Все мы индивидуальны и у
               каждого свой взгляд на
               идеальный отдых. Одному
-              нужен пляж и коктейль, а
+              нужен пляж и коктейль, <br class="companions__tablet"> а
               другому маршрут для хайкинга.
             </p>
             <p class="companions__description companions__description--bold">
-              Теперь можно легко <br>
+              Теперь можно легко <br class="companions__tablet">
               найти единомышленников!
             </p>
           </header>
@@ -342,7 +346,7 @@
 
                   <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
-                  <img class="companions-list__image" src="img/firsova-mobile@1x.jpg 1x" srcset="img/firsova-mobile@2x.jpg 2x" width="270" height="270" alt="Фото Таня Фирсова">
+                  <img class="companions-list__image" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" width="270" height="270" alt="Фото Таня Фирсова">
                 </picture>
               </p>
               <div class="companions-list__person-level person-level person-level--99">
@@ -387,7 +391,7 @@
               </div>
               <div class="companions-list__person-container">
                 <div class="companions-list__name-block">
-                  <div class="catalog-item__indicator indicator indicator--offline indicator--index">
+                  <div class="catalog-list__indicator indicator indicator--offline indicator--index">
                     <span class="visually-hidden">Не в сети</span>
                   </div>
                   <a class="companions-list__name-link" href="#">
@@ -443,7 +447,7 @@
 
                   <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
-                  <img class="companions-list__image" src="img/demin-mobile@1x.jpg 1x" srcset="demin-mobile@2x.jpg 2x" width="270" height="270" alt="Аватар">
+                  <img class="companions-list__image" src="img/demin-mobile@1x.jpg" srcset="demin-mobile@2x.jpg 2x" width="270" height="270" alt="Аватар">
                 </picture>
               </p>
               <div class="companions-list__person-level person-level person-level--80">
@@ -480,15 +484,15 @@
               </div>
               <div class="companions-list__person-container">
                 <div class="companions-list__name-block">
-                  <div class="catalog-item__indicator indicator indicator--online indicator--index">
+                  <div class="catalog-list__indicator indicator indicator--online indicator--index">
                     <span class="visually-hidden">Не в сети</span>
                   </div>
                   <a class="companions-list__name-link" href="#">
                     <h3 class="companions-list__name">Петя Демин</h3>
                   </a>
                 </div>
-                <span class="companions-list__tags">
-                  #Бургер #бар #футбол <br>
+                <span class="companions-list__tags companions-list__tags--demin">
+                  #бургер #бар #футбол <br>
                   #концерт #крафт
                 </span>
                 <ul class="companions-list__transport-list transport-list-index">
@@ -598,7 +602,7 @@
             Заинтересовались?
           </h2>
           <p class="interest__text interest__text--register">
-            Зарегистрируйтесь,
+            Зарегистрируйтесь, <br>
             это быстро и бесплатно!
           </p>
           <p class="interest__text">
@@ -612,7 +616,7 @@
               <svg width="10" height="14" version="1.1">
                 <use xlink:href="img/sprite.svg#triangle-arrow-right"></use>
               </svg>
-            </button type="submit">
+            </button>
           </form>
           <p class="interest__text interest__text--down">
             <span class="interest__text-question">Остались вопросы?</span>
@@ -621,7 +625,7 @@
           <div class="interest__contacts">
             <a class="interest__phone" href="tel:+78005558628">
               <span class="interest__phone-svg">
-                <svg class="interest__phone-icon" viewBox="0 0 36 36">
+                <svg class="interest__phone-icon" viewBox="0 0 36 36" width="18" height="18">
                   <use xlink:href="img/sprite.svg#contacts-phone"></use>
                 </svg>
               </span>
@@ -629,7 +633,7 @@
             </a>
             <a class="interest__mail" href="mailto:mail@htmlacademy.ru">
               <span class="interest__mail-svg">
-                <svg class="interest__mail-icon" viewBox="0 0 36 26">
+                <svg class="interest__mail-icon" viewBox="0 0 36 26" width="18" height="13">
                   <use xlink:href="img/sprite.svg#contacts-mail"></use>
                 </svg>
               </span>
@@ -661,7 +665,7 @@
         </div>
       </div>
       <div class="page-footer-main__map">
-        <iframe class="page-footer-main__map-image" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6037861610246!2d30.3208587!3d59.9387165!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1579547285836!5m2!1sru!2sru" width="3000" height="800" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <iframe class="page-footer-main__map-image" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6037861610246!2d30.3208587!3d59.9387165!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1579547285836!5m2!1sru!2sru" width="3000" height="800" style="border:0;" allowfullscreen=""></iframe>
       </div>
 
       <div class="page-footer">
@@ -766,6 +770,7 @@
 
     <script src="js/script.js"></script>
     <script src="js/script-index.js"></script>
+    <script src="js/picturefill.min.js"></script>
 
   </body>
 
