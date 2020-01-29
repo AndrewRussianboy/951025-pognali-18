@@ -8,6 +8,7 @@ var siteListLink = document.querySelectorAll('.site-list__link');
 var siteList = document.querySelector('.site-list');
 
 navMain.classList.remove('main-nav--nojs');
+pageHeader.classList.remove('page-header--nojs');
 
 navToggle.addEventListener('click', function() {
   if (navMain.classList.contains('main-nav--closed')) {
@@ -32,7 +33,7 @@ navToggle.addEventListener('click', function() {
 });
 
 document.addEventListener('scroll', function () {
-    if (window.scrollY > 1) {
+    if (window.pageYOffset > 100) {
       pageHeader.classList.add('page-header--scroll');
       pageHeaderLogo.style.display='none';
       pageHeaderLogoBlue.style.display='inline-block';
@@ -53,4 +54,4 @@ document.addEventListener('scroll', function () {
       }
       siteList.classList.remove('site-list--scroll');
     }
-})
+}, false);

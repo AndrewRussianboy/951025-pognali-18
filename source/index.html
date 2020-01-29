@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>HTML Academy: Погнали</title>
     <link rel="preload" href="fonts/bloggersans.woff2" as="font" type="font/woff2">
     <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" type="font/woff2">
@@ -16,7 +17,7 @@
   </head>
   <body>
 
-    <header class="page-header">
+    <header class="page-header page-header--nojs">
       <div class="page-header__container">
         <div class="page-header__wrapper">
           <a class="page-header__logo">
@@ -391,7 +392,7 @@
               </div>
               <div class="companions-list__person-container">
                 <div class="companions-list__name-block">
-                  <div class="catalog-list__indicator indicator indicator--offline indicator--index">
+                  <div class="companions-list__indicator indicator indicator--offline indicator--index">
                     <span class="visually-hidden">Не в сети</span>
                   </div>
                   <a class="companions-list__name-link" href="#">
@@ -447,7 +448,7 @@
 
                   <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
-                  <img class="companions-list__image" src="img/demin-mobile@1x.jpg" srcset="demin-mobile@2x.jpg 2x" width="270" height="270" alt="Аватар">
+                  <img class="companions-list__image" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" width="270" height="270" alt="Аватар">
                 </picture>
               </p>
               <div class="companions-list__person-level person-level person-level--80">
@@ -484,7 +485,7 @@
               </div>
               <div class="companions-list__person-container">
                 <div class="companions-list__name-block">
-                  <div class="catalog-list__indicator indicator indicator--online indicator--index">
+                  <div class="companions-list__indicator indicator indicator--online indicator--index">
                     <span class="visually-hidden">Не в сети</span>
                   </div>
                   <a class="companions-list__name-link" href="#">
@@ -768,6 +769,8 @@
       </div>
     </section>
 
+    <script src="js/svgforeverybody.js"></script>
+    <script>svg4everybody();</script>
     <script src="js/script.js"></script>
     <script src="js/script-index.js"></script>
     <script src="js/picturefill.min.js"></script>

@@ -16,7 +16,7 @@
   </head>
   <body>
 
-    <header class="page-header page-header--form">
+    <header class="page-header page-header--nojs page-header--form">
       <div class="page-header__container">
         <div class="page-header__wrapper">
           <a class="page-header__logo" href="index.html">
@@ -161,7 +161,7 @@
           </div>
           <p class="profile-details__avatar">
             <picture>
-              <source media="(min-width: 768px)" srcset="img/photo-account-tablet@1x.webp 1x, img/photo-account-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-account-tablet@1x.webp 1x, img/photo-account-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/photo-account-mobile@1x.webp 1x, img/photo-account-mobile@2x.webp 2x">
 
               <source media="(min-width: 768px)" srcset="img/photo-account-tablet@1x.jpg 1x, img/photo-account-tablet@2x.jpg 2x">
@@ -279,7 +279,7 @@
               <div class="step-one__wrapper">
                 <div class="step-one__container-desktop">
                   <div class="step-one__title-description">
-                    <h3 class="step-one__title">
+                    <h3 class="step-one__title" id="dates">
                       Шаг 1. <br>
                       Даты пребывания
                     </h3>
@@ -436,12 +436,12 @@
 
                   </div>
 
-                  <button class="step-one__button button-form" type="button">
+                  <a class="step-one__button button-form" href="#route">
                     Следующий шаг
                     <svg class="button-form__next" width="10" height="14">
                       <use xlink:href="img/sprite.svg#triangle-arrow-right"></use>
                     </svg>
-                  </button>
+                  </a>
                 </form>
               </div>
             </div>
@@ -453,7 +453,7 @@
               <div class="step-two__wrapper">
                 <div class="step-two__container-desktop">
                   <div class="step-two__title-description">
-                    <h3 class="step-two__title">
+                    <h3 class="step-two__title" id="route">
                       Шаг 2.
                       Маршрут
                     </h3>
@@ -514,13 +514,13 @@
                     <span class="step-two__circle step-two__circle--hole step-two__circle--grey"></span>
                   </div>
                   <div class="step-two__buttons">
-                    <a class="step-two__button button-form" href="#">
+                    <a class="step-two__button button-form" href="#entertainment">
                       Следующий шаг
                       <svg class="button-form__next" width="10" height="14">
                         <use xlink:href="img/sprite.svg#triangle-arrow-right"></use>
                       </svg>
                     </a>
-                    <a class="step-two__button button-form button-form--back" href="#">
+                    <a class="step-two__button button-form button-form--back" href="#dates">
                       <svg class="button-form__previous" width="10" height="14">
                         <use xlink:href="img/sprite.svg#triangle-arrow-left"></use>
                       </svg>
@@ -537,7 +537,7 @@
               <div class="step-three__wrapper">
                 <div class="step-three__container-desktop">
                   <div class="step-three__title-description">
-                    <h3 class="step-three__title">
+                    <h3 class="step-three__title" id="entertainment">
                       Шаг 3.
                       Развлечения
                     </h3>
@@ -561,7 +561,7 @@
                         Босния и Герцеговина
                       </span>
                     </div>
-                    <svg class="step-three__country-flag step-three__country-flag--bosnia" viewBox="0 0 71 48">
+                    <svg class="step-three__country-flag step-three__country-flag--bosnia" viewBox="0 0 71 48" width="35" height="24">
                       <use xlink:href="img/sprite.svg#flag-bosnia"></use>
                     </svg>
                   </div>
@@ -572,7 +572,7 @@
                         Чехия
                       </span>
                     </div>
-                    <svg class="step-three__country-flag step-three__country-flag--czech" viewBox="0 0 71 48">
+                    <svg class="step-three__country-flag step-three__country-flag--czech" viewBox="0 0 71 48" width="35" height="24">
                       <use xlink:href="img/sprite.svg#flag-czech"></use>
                     </svg>
                   </div>
@@ -585,7 +585,7 @@
                         <use xlink:href="img/sprite.svg#triangle-arrow-right"></use>
                       </svg>
                     </button>
-                    <a class="step-three__button button-form button-form--back" href="#">
+                    <a class="step-three__button button-form button-form--back" href="#route">
                       <svg class="button-form__previous" width="10" height="14">
                         <use xlink:href="img/sprite.svg#triangle-arrow-left"></use>
                       </svg>
@@ -725,6 +725,8 @@
       </div>
     </section>
 
+    <script src="js/svgforeverybody.js"></script>
+    <script>svg4everybody();</script>
     <script src="js/form.js"></script>
     <script src="js/script-form.js"></script>
     <script src="js/script.js"></script>

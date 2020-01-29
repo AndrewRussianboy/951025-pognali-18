@@ -16,7 +16,7 @@
   </head>
   <body>
 
-    <header class="page-header page-header--catalog">
+    <header class="page-header page-header--nojs page-header--catalog">
       <div class="page-header__container">
         <div class="page-header__wrapper">
           <a class="page-header__logo" href="index.html">
@@ -153,7 +153,7 @@
       </div>
     </header>
 
-    <main class="companions-catalog">
+    <main class="companions-catalog" style="overflow-x: hidden;">
 
       <div class="companions-catalog__filter-country filter-country">
         <div class="filter-country__container">
@@ -1103,7 +1103,7 @@
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/smolov-tablet@1x.webp 1x, img/smolov-tablet@2x.webp 2x">
                     <source type="image/webp" srcset="img/smolov-mobile@1x.webp 1x, img/smolov-mobile@2x.webp 2x">
 
-                    <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
+                    <source media="(min-width: 1440px)" srcset="img/smolov-desktop@2x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
                     <img class="catalog-item__image" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" width="70" height="70" alt="Фото Марк Смолов">
                   </picture>
@@ -1447,6 +1447,8 @@
       </div>
     </footer>
 
+    <script src="js/svgforeverybody.js"></script>
+    <script>svg4everybody();</script>
     <script src="js/script-catalog.js"></script>
     <script src="js/script-form.js"></script>
     <script src="js/script.js"></script>
